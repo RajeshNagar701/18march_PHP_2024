@@ -6,5 +6,5 @@ print_r($a);
 echo "<br>";
 print_r(array_keys($a));
 echo "<br>";
-print_r(array_values($a))
+print_r(array_values($a));
 ?>

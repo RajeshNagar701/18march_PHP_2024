@@ -17,6 +17,8 @@
 </body>
 </html>
 <?php
+
+
 if(isset($_REQUEST['sum']))
 {
 	$num1=$_REQUEST['num1'];

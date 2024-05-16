@@ -22,12 +22,6 @@ if(isset($_REQUEST['submit']))
 	echo $age=$_REQUEST['age'];
 }
 
-$name="raj nagar";
-
-
-session_start();
-echo $_SESSION['user'];
-
 
 
 ?>

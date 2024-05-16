@@ -1,14 +1,16 @@
 <?php
-$asociate_arr=array("raj"=>"a","2"=>"b","3"=>"c");
-print_r($asociate_arr);
-echo "<br>";
 
+$asociate_arr=array("raj"=>"a","2"=>"b","3"=>"c");
+
+print_r($asociate_arr);
+
+
+echo "<br>";
 
 echo $asociate_arr['raj']. "<br>";
 
-
 foreach($asociate_arr as $string)
 {
-	echo $string ."<br>";
+	echo "<h1>" . $string ."</h1>";
 }
 ?>
