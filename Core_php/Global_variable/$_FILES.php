@@ -19,11 +19,9 @@ if(isset($_POST['submit']))
 	echo $username=$_POST['username']."<br>";
 	echo $file1=$_FILES['file1']['name'];  // get only input type="file"
 	
-		// upload file in folder
-		
-		$path='img/upload/'.$file1;
-		$copy_file=$_FILES['file1']['tmp_name'];
-		move_uploaded_file($copy_file,$path);
+	$path='img/user/'.$file1;
+	$tmp_file1=$_FILES['file1']['tmp_name'];
+	move_uploaded_file($tmp_file1,$path);
 }
 
 ?>

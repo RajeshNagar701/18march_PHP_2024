@@ -14,7 +14,6 @@ $_SESSION['user']="Raj Nagar";  // CREATE
 //echo $_SESSION['user'];       // USE
 
 
-
 // delete session
 
 //unset($_SESSION['user']); // single session delete

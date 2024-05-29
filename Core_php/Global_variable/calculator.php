@@ -5,6 +5,7 @@
 </head>
 <body>
 <form action="" method="post">
+
 	<p>Enter Number 1st: <input type="number" name="num1" required /></p>
 	<p>Enter Number 2st: <input type="number" name="num2" required /></p>
 	<p>
@@ -45,5 +46,11 @@ if(isset($_REQUEST['div']))
 	$num2=$_REQUEST['num2'];
 	echo "Your Division : ".$ans=$num1/$num2;
 }
+
+
+session_start();
+echo $_SESSION['user'];
+
+echo "<br>" . $_COOKIE['user_cookie'];
 
 ?>
