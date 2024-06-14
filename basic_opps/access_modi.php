@@ -30,7 +30,7 @@ class xyz extends abc
 	function multi()
 	{
 		echo $this->a."<br>";// work
-		echo $this->b."<br>";// error
+		echo $this->b."<br>";// error private
 		echo $this->c."<br>";// work
 	}
 }

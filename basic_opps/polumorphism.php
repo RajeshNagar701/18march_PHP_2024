@@ -7,6 +7,8 @@ This word is can from Greek word poly and morphism.
 Poly means "many" and morphism means property which help 
 us to assign more than one property. 
 
+1) overloading
+2) overroading
 
 */
 
@@ -16,7 +18,6 @@ us to assign more than one property.
 /*
 class abc
 {
-	
 	function sum($a,$b)
 	{
 		echo $a+$b;
@@ -27,7 +28,6 @@ class abc
 		echo $a+$b+$c;
 	}
 }
-
 $obj=new xyz;
 $obj->sum(5,10);
 $obj->sum(5,10,5);
@@ -54,11 +54,10 @@ class xyz extends abc
 	
 	function sum($a,$b)
 	{
-		abc::sum(6,5);
+		abc::sum(5,5);
 		echo $a*$b;
 	}
 }
-
 $obj=new xyz;
 $obj->sum(5,10);
 

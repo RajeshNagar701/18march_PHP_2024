@@ -9,7 +9,8 @@ types
 
 Single-level inheritance.
 
-Multi-level inheritance.
+Multi-level inheritance. 
+
 Multiple inheritance.
 Hierarchical Inheritance.
 Hybrid Inheritance.
@@ -25,17 +26,41 @@ class model
 		echo $sum=$this->a+$this->b."<br>";
 	}
 }
-class control extends model
+class control extends model  // inheritance
 {
 	function multi()
 	{
-		echo $this->a*$this->b;
+		echo $multi=$this->a*$this->b."<br>";
 	}
 }
 $obj=new control;
 $obj->sum();
 $obj->multi();
 
+
+
+/*
+class model
+{
+	public $a=10;
+	public $b=20;
+	function sum()
+	{
+		echo $sum=$this->a+$this->b."<br>";
+	}
+}
+class control extends model  // inheritance
+{
+	function multi()
+	{
+		$this->sum();
+		echo $multi=$this->a*$this->b."<br>";
+	}
+}
+$obj=new control;
+$obj->sum();
+$obj->multi();
+*/
 
 /*
 1) single level
@@ -82,7 +107,7 @@ class b
 {
 	
 }
-class c extends a,b  
+class c extends a,b  // not posible 
 {
 	
 }

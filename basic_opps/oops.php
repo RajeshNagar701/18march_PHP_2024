@@ -81,19 +81,20 @@ class abc
 		echo $a*$b;
 	}
 }
-
 $obj=new abc;
 $obj->sum();
 $obj->multi();
 
-*/
 
+
+*/
 class abc
 {
 	public $a=10,$b=20;
 	
 	function sum()
 	{
+		$x=10; //local 
 		echo $this->a+$this->b;
 	}
 	function multi()
@@ -101,7 +102,6 @@ class abc
 		echo $this->a*$this->b;
 	}
 }
-
 $obj=new abc;
 $obj->sum();
 $obj->multi();
