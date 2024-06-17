@@ -47,7 +47,7 @@
 
 
                     <li class="active-link">
-                        <a href="dashboard.php" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
+                        <a href="dashboard" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
                     </li>
                    
 
@@ -56,8 +56,8 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-table "></i>Categories
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-						  <li><a href="add_categories.php">Add Categories</a></li>
-						  <li><a href="manage_categories.php">Manage Categories</a></li>
+						  <li><a href="add_categories">Add Categories</a></li>
+						  <li><a href="manage_categories">Manage Categories</a></li>
 						</ul>
 					  </li>
                     <li>
@@ -65,8 +65,8 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-table "></i>Services
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-						  <li><a href="add_services.php">Add Services</a></li>
-						  <li><a href="manage_services.php">Manage Services</a></li>
+						  <li><a href="add_services">Add Services</a></li>
+						  <li><a href="manage_services">Manage Services</a></li>
 						</ul>
 					  </li>
                     <li>
@@ -74,16 +74,16 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-table "></i>Blog
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-						  <li><a href="add_blog.php">Add Blog</a></li>
-						  <li><a href="manage_blog.php">Manage Blog</a></li>
+						  <li><a href="add_blog">Add Blog</a></li>
+						  <li><a href="manage_blog">Manage Blog</a></li>
 						</ul>
 					  </li>
                     <li>
                     <li>
-                        <a href="manage_customer.php"><i class="fa fa-edit "></i>Customer</a>
+                        <a href="manage_customer"><i class="fa fa-edit "></i>Customer</a>
                     </li>
 					 <li>
-                        <a href="manage_contact.php"><i class="fa fa-edit "></i>Contact</a>
+                        <a href="manage_contact"><i class="fa fa-edit "></i>Contact</a>
                     </li>
 
 
