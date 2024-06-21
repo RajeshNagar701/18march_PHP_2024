@@ -15,20 +15,29 @@ include_once('header.php');
                                     <th>#ID</th>
                                     <th>Blog Name</th>
                                     <th>Image</th>
+									<th>Description</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+							foreach($data as $d)
+							{
+							?>	
                                 <tr>
-                                    <td>1</td>
-                                    <td>Skin</td>
-                                    <td><img src=""></td>
+                                    <td><?php echo $d->id?></td>
+                                    <td><?php echo $d->title?></td>
+                                    <td><img src=""><?php echo $d->img?></td>
+									 <td><?php echo $d->description?></td>
                                     <td>
 										<a href="#" class="btn btn-danger">Delete</a>
 										<a href="#" class="btn btn-info">Edit</a>
 										
 									</td>
                                 </tr>
+							<?php
+							}
+							?>	
                                
                             </tbody>
                         </table>

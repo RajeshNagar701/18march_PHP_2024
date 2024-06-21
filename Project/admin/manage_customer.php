@@ -14,21 +14,38 @@ include_once('header.php');
                                 <tr>
                                     <th>#ID</th>
                                     <th>Customer Name</th>
-                                    <th>Image</th>
+									<th>Email</th>
+									<th>Password</th>
+									<th>Gender</th>
+									<th>Laungunges</th>
+									<th>Countries</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+							foreach($data as $d)
+							{
+							?>	
                                 <tr>
-                                    <td>1</td>
-                                    <td>Skin</td>
-                                    <td><img src=""></td>
+                                    <td><?php echo $d->id?></td>
+                                    <td><?php echo $d->name?></td>
+                                    <td><?php echo $d->email?></td>
+									<td><?php echo $d->pass?></td>
+									<td><?php echo $d->gen?></td>
+									<td><?php echo $d->lag?></td>
+									<td><?php echo $d->cid?></td>
+									<td><?php echo $d->status?></td>
                                     <td>
 										<a href="#" class="btn btn-danger">Delete</a>
 										<a href="#" class="btn btn-info">Edit</a>
 										
 									</td>
                                 </tr>
+							<?php
+							}
+							?>
                                
                             </tbody>
                         </table>

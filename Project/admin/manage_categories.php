@@ -19,16 +19,23 @@ include_once('header.php');
                                 </tr>
                             </thead>
                             <tbody>
+							<?php
+							foreach($data as $d)
+							{
+							?>	
                                 <tr>
-                                    <td>1</td>
-                                    <td>Skin</td>
-                                    <td><img src=""></td>
+                                    <td><?php echo $d->id?></td>
+                                    <td><?php echo $d->name?></td>
+                                    <td><img src=""><?php echo $d->img?></td>
                                     <td>
 										<a href="#" class="btn btn-danger">Delete</a>
 										<a href="#" class="btn btn-info">Edit</a>
 										
 									</td>
                                 </tr>
+							<?php
+							}
+							?>	
                                
                             </tbody>
                         </table>

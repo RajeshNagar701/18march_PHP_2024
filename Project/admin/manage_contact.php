@@ -13,22 +13,31 @@ include_once('header.php');
                             <thead>
                                 <tr>
                                     <th>#ID</th>
-                                    <th>Contact Name</th>
-                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+									<th>Message</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+							foreach($data as $d)
+							{
+							?>	
                                 <tr>
-                                    <td>1</td>
-                                    <td>Skin</td>
-                                    <td><img src=""></td>
+                                    <td><?php echo $d->id?></td>
+                                    <td><?php echo $d->name?></td>
+                                    <td><?php echo $d->email?></td>
+									 <td><?php echo $d->msg?></td>
                                     <td>
 										<a href="#" class="btn btn-danger">Delete</a>
 										<a href="#" class="btn btn-info">Edit</a>
 										
 									</td>
                                 </tr>
+							<?php
+							}
+							?>	
                                
                             </tbody>
                         </table>
